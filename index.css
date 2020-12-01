@@ -14,3 +14,12 @@ h1 {
 .clicked {
   color: darkslateblue;
 }
+
+.form,
+.savenames {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
