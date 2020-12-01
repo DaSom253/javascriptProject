@@ -16,7 +16,7 @@ function paintToDo(text) {
 }
 
 function handleSubmit(event) {
-    event.preDefault();
+    event.preventDefault();
     const currentValue = toDoInput.value;
     paintToDo(currentValue);
     toDoInput.value = "";
