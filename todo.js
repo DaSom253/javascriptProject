@@ -39,9 +39,9 @@ function handleSubmit(event) {
 function loadToDos() {
     const loadedToDos = localStorage.getItem(TODOS_LS);
     if (loadedToDos !== null) {
-        const parsedToDos = JSON.parse(loadedToDos);
+        const parsedToDos = JSON.parse(loadedToDos); // localStorage에 있는 value들을 소환해줄 것
         parsedToDos.forEach(function(toDo) {
-            console.log(toDo.text);
+            paintToDo(toDo.text);
         });
     }
 }
